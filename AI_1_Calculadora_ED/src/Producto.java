@@ -17,7 +17,9 @@ public class Producto {
 	 */
 	public String ProductoReales (double numero1, double numero2) { 
 
-		return "";
+		double n= numero1*numero2 ;
+			return "El resultado de la multiplicar : " + numero1 + " * " + numero2 +
+				" es igual a " + Math.round(n*100.0)/100.0 ;
 		
 	}
 	
@@ -33,8 +35,10 @@ public class Producto {
 	
 	
 	public String ProductoEnteros (int numero1, int numero2) {
-
-		return "";
+		int n = numero1*numero2;
+		return "El resultado de la multiplicar : " + numero1 + " * " + numero2 +
+				" es igual a " + n ;
+		
 		
 	}
 	
@@ -49,8 +53,10 @@ public class Producto {
 	 */
 	
 	public  String ProductoTresReales ( double numero1, double numero2, double numero3) {
-
-		return "";
+		double n = numero1*numero2*numero3;
+		return "El resultado de la multiplicar : " + numero1 + " * " + numero2 + " * " + numero3 + 
+				" es igual a " + Math.round(n*100.0)/100.0;
+		
 		
 	}
 	
@@ -65,8 +71,10 @@ public class Producto {
 	 */
 	
 	public String Potencia (double base, double exponente) {
-
-		return "";
+		double n = Math.round(Math.pow(base, exponente)*100.0)/100.0;
+		return  "El resultado de la potencia con base : " + base + " y con exponente:  " + exponente + 
+				" es igual a " + n ;
+		
 		
 	}
 }
