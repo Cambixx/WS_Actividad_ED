@@ -29,7 +29,7 @@ public class Cociente {
 		
 		//TODO
 		
-		return 0;
+		return num1/num2;
 		
 	}
 	
