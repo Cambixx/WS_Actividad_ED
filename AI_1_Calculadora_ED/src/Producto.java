@@ -1,5 +1,5 @@
 /**
- * CLASE QUE IMPLEMENTARÁ TODOS LOS MÉTODOS QUE ESTAN RELACIONADOS CON LA MULTIPLICACIÓN DE LA CALCULADORA.
+ * Clase que implementará todos los métodos que estan relacionados con la multiplicación de la calculadora.
  * @author SERGIO MARTÍNEZ RIVERA
  * @version 1
  *
@@ -7,73 +7,68 @@
 public class Producto {
 
 	/**
-	 * METODO QUE CALCULA LA MULTIPLICACIÓN DE DOS NÚMEROS REALES. 
-	 * 
-	 * @param numero1 REPRESENTA EL PRIMER NUMERO REAL DE LA MULTIPLICACIÓN.
-	 * @param numero2  REPRESENTA EL SEGUNDO NUMERO REAL DE LA MULTIPLICACIÓN.
+	 * Método que calcula la multiplicación de dos números reales.
+	 * @param numero1 representa el primer número real de la multiplicación.
+	 * @param numero2 representa el segundo número real de la multiplicación.
 	 * 		  
-	 * @return RETORNARA UNA CADENA QUE CONTIENE EL RESULTADO DE LA MULTIPLICACIÓN 
-	 *  REDONDEADA A DOS DECIMALES HACIENDO USO DEL Math.round.
+	 * @return Retornará el resultado obtenido de la multiplicación de los parámetros introducidos. 
+	 * Redondea el resultado obtenido con el Math.round.
 	 */
-	public String ProductoReales (double numero1, double numero2) { 
+	public double ProductoReales (double numero1, double numero2) { 
 
 		double n= numero1*numero2 ;
-			return "El resultado de la multiplicar : " + numero1 + " * " + numero2 +
-				" es igual a " + Math.round(n*100.0)/100.0 ;
+		return Math.round(n*100.0)/100.0;
+				
 		
 	}
 	
-	/**
-	 * METODO QUE CALCULA LA MULTIPLICACIÓN DE DOS NÚMEROS ENTEROS. 
-	 * 
-	 * @param numero1  REPRESENTA EL PRIMER NUMERO ENTERO DE LA MULTIPLICACIÓN.
-	 * @param numero2  REPRESENTA EL SEGUNDO NUMERO ENTERO DE LA MULTIPLICACIÓN.
+	/** 
+	 * Método que calcula la multiplicación de dos números enteros.
+	 * @param numero1  representa el primer número entero de la multiplicación.
+	 * @param numero2  representa el segundo número entero de la multiplicación.
 	 * 		  
-	 * @return RETORNARA UNA CADENA QUE CONTIENE EL RESULTADO DE LA MULTIPLICACIÓN..
-	 * @deprecated EL MÉTODO {@link #ProductoReales (double, double)} TAMBIÉN ME CALCULA DOS NÚMEROS ENTEROS.
+	 * @return  Retornará el resultado obtenido de la multiplicación de los parámetros introducidos.
+	 * Ocurrirá un error si se le introduce algún número real. 
+	 * @deprecated el método {@link #ProductoReales (double, double)} también me calcula dos enteros.
 	 */
 	
 	
-	public String ProductoEnteros (int numero1, int numero2) {
+	public int ProductoEnteros (int numero1, int numero2) {
 		int n = numero1*numero2;
-		return "El resultado de la multiplicar : " + numero1 + " * " + numero2 +
-				" es igual a " + n ;
+		return n;
 		
 		
 	}
 	
 	/**
-	 * METODO QUE CALCULA LA MULTIPLICACIÓN DE DOS NÚMEROS REALES. 
-	 * 
-	 * @param numero1  REPRESENTA EL PRIMER NÚMERO REAL DE LA MULTIPLICACIÓN.
-	 * @param numero2  REPRESENTA EL SEGUNDO NÚMERO REAL DE LA MULTIPLICACIÓN.
-	 * @param numero3  REPRESENTA EL TERCER NÚMERO REAL DE LA MULTIPLICACIÓN	  
-	 * @return RETORNARA UNA CADENA QUE CONTIENE EL RESULTADO DE LA MULTIPLICACIÓN 
-	 *  REDONDEADA A DOS DECIMALES, HACIENDO USO DEL Math.round.
+	 * Método que calcula la multiplicación de tres números reales.
+	 * @param numero1  Representa el primer número real de la multiplicación.
+	 * @param numero2  Representa el segundo número real de la multiplicación.
+	 * @param numero3  Representa el tercer número real de la multiplicación.	  
+	 * @return Retornará el resultado obtenido de la multiplicación de los parámetros introducidos. 
+	 * Redondea a dos decimales con el uso del Math.round().
 	 */
 	
-	public  String ProductoTresReales ( double numero1, double numero2, double numero3) {
+	public  double ProductoTresReales ( double numero1, double numero2, double numero3) {
 		double n = numero1*numero2*numero3;
-		return "El resultado de la multiplicar : " + numero1 + " * " + numero2 + " * " + numero3 + 
-				" es igual a " + Math.round(n*100.0)/100.0;
+		return Math.round(n*100.0)/100.0;
 		
 		
 	}
 	
 	/**
-	 * METODO QUE CALCULA EL RESULTADO DE UNA POTENCIA.
-	 * LA POTENCIACIÓN ES UNA OPERACIÓN QUE CONSISTE EN MULTIPLICAR POR SÍ MISMO UN NÚMERO PRINCIPAL LLAMADO BASE,
-	 * TANTAS VECES COMO LO INDIQUE OTRO NÚMERO QUE SE LLAMA EXPONENTE.
-	 * @param base NÚMERO REAL O ENTERO QUE SERVIRÁ COMO BASE DE LA POTENCIA.
-	 * @param exponente NÚMERO REAL O ENTERO QUE SERVIRÁ COMO EXPONENTE DE LA POTENCIA.
-	 * @return  RETORNARA UNA CADENA QUE CONTIENE EL RESULTADO DE LA POTENCIA REDONDEADA
-	 *  A DOS DECIMALES, HACIENDO USO DEL Math.round. DARÁ ERROR SI EL RESULTADO ES MAS GRANDE DE UN DOUBLE.
+	 * Método que calcula el resultado de una potencia.
+	 * La potencia es una operación que consiste en multiplicar por si mismo un número principal llamado base ,
+	 * tantas veces como lo indique otro número llamado exponente.
+	 * @param base Número real o entero que servirá como base de la potencia.
+	 * @param exponente Número real o entero que servirá como exponente de la potencia.
+	 * @return  Retornara el resultado de la potencia, redondeado a 2 decimales haciendo uso del Math.round().
+	 *  Dará error si el resultado obtenido es mayor a un double.
 	 */
 	
-	public String Potencia (double base, double exponente) {
-		double n = Math.round(Math.pow(base, exponente)*100.0)/100.0;
-		return  "El resultado de la potencia con base : " + base + " y con exponente:  " + exponente + 
-				" es igual a " + n ;
+	public double Potencia (double base, double exponente) {
+		double n = Math.pow(base, exponente);
+		return  Math.round(n*100.0)/100.0;
 		
 		
 	}
