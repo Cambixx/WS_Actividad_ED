@@ -16,6 +16,12 @@ public class Calculadora {
 		System.out.println(p1.Potencia(2.54, 9.4));
 		
 		System.out.println("-----------------------------------COCIENTE-----------------------------------");
+		Cociente c = new Cociente();
+		System.out.println(c.divisionReales(8.5, 4.3));
+		System.out.println(c.divisionEnteros(4, 5));
+		System.out.println(c.inverso(18));
+		System.out.println(c.raiz(25));
+		
 	}
 
 }
