@@ -67,7 +67,7 @@ public class Cociente {
 	
 	public double inverso(double num) {
 	
-		return 0;
+		return Math.pow(num, -1);
 	
 	}
 	
