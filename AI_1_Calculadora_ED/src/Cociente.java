@@ -27,7 +27,8 @@ public class Cociente {
 	
 	public double divisionReales(double num1, double num2) {
 						
-		return num1/num2;
+		double d = num1/num2;
+		return Math.round(d*100.0)/100.0;
 		
 	}
 	
@@ -51,7 +52,9 @@ public class Cociente {
 	
 	public double divisionEnteros(int num1, int num2) {
 						
-		return (double)num1/num2;
+		double d = (double)num1/num2;
+		
+		return Math.round(d*100.0)/100.0;
 		
 	}
 	
@@ -67,7 +70,9 @@ public class Cociente {
 	
 	public double inverso(double num) {
 	
-		return Math.pow(num, -1);
+		double d = Math.pow(num, -1);
+		
+		return Math.round(d*100.0)/100.0;
 	
 	}
 	
@@ -86,7 +91,9 @@ public class Cociente {
 	
 	public double raiz(double num) {
 		
-		return Math.sqrt(num);
+		double d = Math.sqrt(num);
+		
+		return Math.round(d*100.0)/100.0;
 		
 	}
 
