@@ -86,7 +86,7 @@ public class Cociente {
 	
 	public double raiz(double num) {
 		
-		return 0;
+		return Math.sqrt(num);
 		
 	}
 
