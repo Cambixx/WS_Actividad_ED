@@ -26,9 +26,7 @@ public class Cociente {
 	 */
 	
 	public double divisionReales(double num1, double num2) {
-		
-		//TODO
-		
+						
 		return num1/num2;
 		
 	}
@@ -52,10 +50,8 @@ public class Cociente {
 	 */
 	
 	public double divisionEnteros(int num1, int num2) {
-		
-		//TODO
-		
-		return 0;
+						
+		return (double)num1/num2;
 		
 	}
 	
@@ -71,7 +67,7 @@ public class Cociente {
 	
 	public double inverso(double num) {
 	
-		return 0;
+		return Math.pow(num, -1);
 	
 	}
 	
@@ -90,7 +86,7 @@ public class Cociente {
 	
 	public double raiz(double num) {
 		
-		return 0;
+		return Math.sqrt(num);
 		
 	}
 
