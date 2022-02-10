@@ -12,32 +12,33 @@
  */
 
 public class Suma {
+	
 	// ATRIBUTOS DE CLASE
 	
-	//private Integer valorAcumulado;
+	private double acumulado;
 	
 	// METODOS	
 	/**
 	* Este método suma dos números reales introducidos y muestra la solución de la suma por pantalla.
 	* 
-	* @param num1 Primer número real a sumar.
-	* @param num2 Segundo número real a sumar.
-	* @return Suma total de los dos números introducidos.
+	* @param num1 Representa el primer número real a sumar.
+	* @param num2 Representa el segundo número real a sumar.
+	* @return Retornará el resultado de la suma de los dos números reales introducidos.
 	* 
 	*/
 	
 	public double sumaDosReales(double num1, double num2) {
 		double num = num1 + num2;
-		return num;
+		return Math.round(num*100.0)/100.0;
 	}
 	
 	
 	/**
 	* Este método suma dos números enteros introducidos y muestra la solución de la suma por pantalla.
 	* 
-	* @param num1 Primer número entero a sumar.
-	* @param num2 Segundo número entero a sumar.
-	* @return Suma total de los dos números introducidos.
+	* @param num1 Representa el primer número entero a sumar.
+	* @param num2 Representa el segundo número entero a sumar.
+	* @return Retornará el resultado de la suma de los dos números enteros introducidos.
 	* 
 	*/
 	
@@ -49,30 +50,41 @@ public class Suma {
 	/**
 	* Este método suma tres números reales introducidos y muestra la solución de la suma por pantalla.
 	* 
-	* @param num1 Primer número real a sumar.
-	* @param num2 Segundo número real a sumar.
-	* @param num3 Tercer número real a sumar.
-	* @return Suma total de los tres números introducidos.
+	* @param num1 Representa el primer número real a sumar.
+	* @param num2 Representa el segundo número real a sumar.
+	* @param num3 Representa el tercer número real a sumar.
+	* @return Retornará el resultado de la suma de los tres números introducidos.
 	* 
 	*/
 	
 	public double sumaTresReales(double num1, double num2, double num3) {
 		double num = num1 + num2 + num3;
-		return num;
+		return Math.round(num*100.0)/100.0;
 	}
 	
 	/**
 	* Este método guardará el valor acumulado de la suma de los números introducidos. 
+	* 
+	* @param Representa el primer número real a sumar.
+	* 
 	* No retorna nada porque lo que hace este método es acumular los valores de entrada.
-	* 
-	* @param numero Primer número real a sumar.
-	* 
 	* 
 	*/
 	
-	public void guardarValorAcumulado(int numero) {
-		//TODO	
+	public void guardarValorAcumulado(double numero) {
+		acumulado= acumulado + numero;
 	}
+	
+	/**
+	* Este método sirve para consultar el valor acumulado de la suma de los números introducidos. 
+	* 
+	* @return Retornará el resultado de la suma de los números introducidos.
+	* 
+	*/
+	
+	public double getValorAcumulado(){
+        return acumulado;
+    }
 		
 }
 

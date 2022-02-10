@@ -4,10 +4,14 @@ public class Calculadora {
 	public static void main(String[] args) {
 		System.out.println("-----------------------------------SUMA-----------------------------------");
 		Suma sum1 = new Suma();
-		System.out.println(sum1.sumaDosReales(5.1, 4));
-		System.out.println(sum1.sumaDosEnteros(7, 2));
-		System.out.println(sum1.sumaTresReales(3, 20, 5.5));
-		
+		System.out.println(sum1.sumaDosReales(5.14, 4));
+		System.out.println(sum1.sumaDosEnteros(7, -2));
+		System.out.println(sum1.sumaTresReales(-3, -20, -5.5));
+		Suma sum2 = new Suma();
+		sum2.guardarValorAcumulado(5);
+		sum2.guardarValorAcumulado(55);
+		sum2.guardarValorAcumulado(-5);
+		System.out.println(sum2.getValorAcumulado());
 		
 		System.out.println("-----------------------------------RESTA-----------------------------------");
 		
