@@ -3,6 +3,10 @@ public class Calculadora {
 
 	public static void main(String[] args) {
 		System.out.println("-----------------------------------SUMA-----------------------------------");
+		Suma sum1 = new Suma();
+		System.out.println(sum1.sumaDosReales(5.1, 4));
+		System.out.println(sum1.sumaDosEnteros(7, 2));
+		System.out.println(sum1.sumaTresReales(3, 20, 5.5));
 		
 		
 		System.out.println("-----------------------------------RESTA-----------------------------------");

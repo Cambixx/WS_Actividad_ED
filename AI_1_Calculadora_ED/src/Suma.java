@@ -8,7 +8,6 @@
  * 
  * @author Lidia Díaz Mendoza
  * @version 1.0
- * 
  *
  */
 
@@ -27,9 +26,9 @@ public class Suma {
 	* 
 	*/
 	
-	public double metodoUno(double num1, double num2) {
-		// TODO
-		return num1 + num2;
+	public double sumaDosReales(double num1, double num2) {
+		double num = num1 + num2;
+		return num;
 	}
 	
 	
@@ -42,9 +41,9 @@ public class Suma {
 	* 
 	*/
 	
-	public int metodoDos(int num1, int num2) {
-		// TODO
-		return num1 + num2;
+	public int sumaDosEnteros(int num1, int num2) {
+		int num = num1 + num2;
+		return num;
 	}
 	
 	/**
@@ -57,9 +56,9 @@ public class Suma {
 	* 
 	*/
 	
-	public double metodoTres(double num1, double num2, double num3) {
-		// TODO
-		return num1 + num2 + num3;
+	public double sumaTresReales(double num1, double num2, double num3) {
+		double num = num1 + num2 + num3;
+		return num;
 	}
 	
 	/**
@@ -71,7 +70,7 @@ public class Suma {
 	* 
 	*/
 	
-	public void metodoCuatro(int numero) {
+	public void guardarValorAcumulado(int numero) {
 		//TODO	
 	}
 		
