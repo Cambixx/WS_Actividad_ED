@@ -21,8 +21,8 @@ public class Suma {
 	/**
 	* Este método suma <b>dos números reales</b> introducidos y muestra la solución de la suma por pantalla.
 	* 
-	* @param num1 Representa el <b>primer número real a sumar.
-	* @param num2 Representa el <b>segundo número real a sumar.
+	* @param num1 Representa el <b>primer número real a sumar.</b>
+	* @param num2 Representa el <b>segundo número real a sumar.</b>
 	* 
 	* @return Retornará el resultado de la suma de los <b>dos números reales</b> introducidos.
 	* 
@@ -69,7 +69,7 @@ public class Suma {
 	* 
 	* @param numero Representa el <b>primer número real</b> a sumar.
 	* 
-	* @return No retorna nada porque lo que hace este método es acumular los valores de entrada.
+	* No retorna nada porque lo que hace este método es acumular los valores de entrada.
 	* 
 	*/
 	
