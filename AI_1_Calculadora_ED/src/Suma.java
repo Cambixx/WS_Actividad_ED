@@ -19,11 +19,12 @@ public class Suma {
 	
 	// METODOS	
 	/**
-	* Este método suma dos números reales introducidos y muestra la solución de la suma por pantalla.
+	* Este método suma <b>dos números reales</b> introducidos y muestra la solución de la suma por pantalla.
 	* 
-	* @param num1 Representa el primer número real a sumar.
-	* @param num2 Representa el segundo número real a sumar.
-	* @return Retornará el resultado de la suma de los dos números reales introducidos.
+	* @param num1 Representa el <b>primer número real a sumar.
+	* @param num2 Representa el <b>segundo número real a sumar.
+	* 
+	* @return Retornará el resultado de la suma de los <b>dos números reales</b> introducidos.
 	* 
 	*/
 	
@@ -34,11 +35,12 @@ public class Suma {
 	
 	
 	/**
-	* Este método suma dos números enteros introducidos y muestra la solución de la suma por pantalla.
+	* Este método suma <b>dos números enteros</b> introducidos y muestra la solución de la suma por pantalla.
 	* 
-	* @param num1 Representa el primer número entero a sumar.
-	* @param num2 Representa el segundo número entero a sumar.
-	* @return Retornará el resultado de la suma de los dos números enteros introducidos.
+	* @param num1 Representa el <b>primer número entero</b> a sumar.
+	* @param num2 Representa el <b>segundo número entero</b> a sumar.
+	* 
+	* @return Retornará el resultado de la suma de los <b>dos números enteros</b> introducidos.
 	* 
 	*/
 	
@@ -48,11 +50,11 @@ public class Suma {
 	}
 	
 	/**
-	* Este método suma tres números reales introducidos y muestra la solución de la suma por pantalla.
+	* Este método suma <b>tres números reales</b> introducidos y muestra la solución de la suma por pantalla.
 	* 
-	* @param num1 Representa el primer número real a sumar.
-	* @param num2 Representa el segundo número real a sumar.
-	* @param num3 Representa el tercer número real a sumar.
+	* @param num1 Representa el <b>primer número real</b> a sumar.
+	* @param num2 Representa el <b>segundo número real</b> a sumar.
+	* @param num3 Representa el <b>tercer número real</b> a sumar.
 	* @return Retornará el resultado de la suma de los tres números introducidos.
 	* 
 	*/
@@ -63,11 +65,11 @@ public class Suma {
 	}
 	
 	/**
-	* Este método guardará el valor acumulado de la suma de los números introducidos. 
+	* Este método <b>guardará el valor acumulado</b> de la suma de los <b>números introducidos</b>. 
 	* 
-	* @param Representa el primer número real a sumar.
+	* @param numero Representa el <b>primer número real</b> a sumar.
 	* 
-	* No retorna nada porque lo que hace este método es acumular los valores de entrada.
+	* @return No retorna nada porque lo que hace este método es acumular los valores de entrada.
 	* 
 	*/
 	
