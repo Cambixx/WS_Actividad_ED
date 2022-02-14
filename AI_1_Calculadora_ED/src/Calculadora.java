@@ -14,7 +14,13 @@ public class Calculadora {
 		System.out.println(sum2.getValorAcumulado());
 		
 		System.out.println("-----------------------------------RESTA-----------------------------------");
-		
+		Resta r1 = new Resta();
+		System.out.println(r1.restaDosReales(5.3, 1.2));
+		System.out.println(r1.restaDosEnteteros(8, 10));
+		System.out.println(r1.restaTresReales(8.6, 9.2, 1.1));
+		r1.valorAcumulado(r1.restaDosReales(5.2, 3.1));
+		r1.valorAcumulado(r1.restaDosEnteteros(9, 4));
+		System.out.println(r1.getAcumulado());
 		
 		System.out.println("-----------------------------------PRODUCTO-----------------------------------");
 		Producto p1 = new Producto();
