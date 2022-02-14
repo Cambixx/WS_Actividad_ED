@@ -7,19 +7,23 @@
  * 
  * 
  * @author Lidia Díaz Mendoza
- * @version 1.0
+ * @version 2.0
  *
  */
 
 public class Suma {
 	
 	// ATRIBUTOS DE CLASE
+	/**
+	 * Atributo para el método guardarValorAcumulado, que guardará la suma de los números introducidos.
+	 */
 	
 	private double acumulado;
 	
 	// METODOS	
 	/**
-	* Este método suma <b>dos números reales</b> introducidos y muestra la solución de la suma por pantalla.
+	* Este método suma <b>dos números reales</b> introducidos y muestra la solución de la suma por pantalla. 
+	* Los números introducidos podrán ser positivos o negativos.
 	* 
 	* @param num1 Representa el <b>primer número real a sumar.</b>
 	* @param num2 Representa el <b>segundo número real a sumar.</b>
@@ -36,6 +40,7 @@ public class Suma {
 	
 	/**
 	* Este método suma <b>dos números enteros</b> introducidos y muestra la solución de la suma por pantalla.
+	* Los números introducidos podrán ser positivos o negativos.
 	* 
 	* @param num1 Representa el <b>primer número entero</b> a sumar.
 	* @param num2 Representa el <b>segundo número entero</b> a sumar.
@@ -51,6 +56,7 @@ public class Suma {
 	
 	/**
 	* Este método suma <b>tres números reales</b> introducidos y muestra la solución de la suma por pantalla.
+	* Los números introducidos podrán ser positivos o negativos.
 	* 
 	* @param num1 Representa el <b>primer número real</b> a sumar.
 	* @param num2 Representa el <b>segundo número real</b> a sumar.
@@ -65,7 +71,8 @@ public class Suma {
 	}
 	
 	/**
-	* Este método <b>guardará el valor acumulado</b> de la suma de los <b>números introducidos</b>. 
+	* Este método <b>guardará el valor acumulado</b> de la suma de los <b>números introducidos</b>.
+	* Los números introducidos podrán ser positivos o negativos. 
 	* 
 	* @param numero Representa el <b>primer número real</b> a sumar.
 	* 
