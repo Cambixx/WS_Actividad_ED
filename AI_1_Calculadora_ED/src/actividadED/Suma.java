@@ -1,3 +1,4 @@
+package actividadED;
 /**
  * Esta clase implementará todos los métodos que están relacionados con la <b>sumas de la calculadora</b>.
  *

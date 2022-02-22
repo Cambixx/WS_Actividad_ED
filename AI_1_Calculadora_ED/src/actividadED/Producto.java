@@ -1,3 +1,4 @@
+package actividadED;
 /**
  * Clase que implementará todos los métodos que estan relacionados con la multiplicación de la calculadora.
  * @author SERGIO MARTÍNEZ RIVERA

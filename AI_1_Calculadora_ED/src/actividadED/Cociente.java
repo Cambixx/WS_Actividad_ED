@@ -1,3 +1,4 @@
+package actividadED;
 /**
  * Clase que contiene los métodos para hacer cálculos de divisiones y tienen como
  * resultado un cociente.

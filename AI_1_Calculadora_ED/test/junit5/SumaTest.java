@@ -2,13 +2,29 @@ package junit5;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class SumaTest {
+import actividadED.*;
 
+public class SumaTest {
+
+	private Suma s1;
+	
+	@BeforeEach
+	public void limpiarSuma() {
+		
+		s1 = new Suma();
+		
+	}
+	
+	
+	
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	public void testSumaDosReales() {
+		
+		
+		
 	}
 
 }
