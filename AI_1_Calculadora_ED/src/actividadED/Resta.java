@@ -1,4 +1,6 @@
 package actividadED;
+
+
 /**
  * Esta clase implementará todos los métodos que están relacionados con la <b>restas de la calculadora</b>.
  *
@@ -14,9 +16,98 @@ package actividadED;
  */
 
 public class Resta {
+	
+	private int Entero1, Entero2;
+	private double Real1, Real2, Real3;
 		
 	private double acumulado;
 	
+	
+	
+	public Resta() {
+		super();
+	}
+
+	
+	
+
+	public int getEntero1() {
+		return Entero1;
+	}
+
+
+
+
+	public void setEntero1(int entero1) {
+		Entero1 = entero1;
+	}
+
+
+
+
+	public int getEntero2() {
+		return Entero2;
+	}
+
+
+
+
+	public void setEntero2(int entero2) {
+		Entero2 = entero2;
+	}
+
+
+
+
+	public double getReal1() {
+		return Real1;
+	}
+
+
+
+
+	public void setReal1(double real1) {
+		Real1 = real1;
+	}
+
+
+
+
+	public double getReal2() {
+		return Real2;
+	}
+
+
+
+
+	public void setReal2(double real2) {
+		Real2 = real2;
+	}
+
+
+
+
+	public double getReal3() {
+		return Real3;
+	}
+
+
+
+
+	public void setReal3(double real3) {
+		Real3 = real3;
+	}
+
+
+
+
+	public void setAcumulado(double acumulado) {
+		this.acumulado = acumulado;
+	}
+
+
+
+
 	/**
 	* Este método resta dos números reales introducidos y muestra la solución de la operacion por pantalla.
 	* 
