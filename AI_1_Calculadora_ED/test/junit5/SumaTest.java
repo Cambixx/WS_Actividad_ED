@@ -131,14 +131,27 @@ public class SumaTest {
 		
 		assertEquals(resultadoEsperado, resultadoObtenido);
 		
-		s1.guardarValorAcumulado(-2.1);
+		s1.guardarValorAcumulado(-2);
 				
-		resultadoEsperado = 6.2;
+		resultadoEsperado = 6.3;
 		resultadoObtenido = s1.getValorAcumulado();
 		
 		assertEquals(resultadoEsperado, resultadoObtenido);
 		
+		s1.guardarValorAcumulado(-8.2);
 		
+		resultadoEsperado = -1.9;
+		resultadoObtenido = s1.getValorAcumulado();
+		
+		assertEquals(resultadoEsperado, resultadoObtenido);
+		
+		s1.guardarValorAcumulado(0);
+		
+		resultadoEsperado = -1.9;
+		resultadoObtenido = s1.getValorAcumulado();
+		
+		assertEquals(resultadoEsperado, resultadoObtenido);
+				
 	}
 	
 	

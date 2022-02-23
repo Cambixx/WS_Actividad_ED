@@ -82,7 +82,7 @@ public class Suma {
 	*/
 	
 	public void guardarValorAcumulado(double numero) {
-		acumulado= acumulado + numero;
+		acumulado= Math.round((acumulado + numero)*100.0)/100.0;
 	}
 	
 	/**
