@@ -20,37 +20,32 @@ class TestResta {
 	
 	@Test
 	public void testrestaDosReales() {
-		r1.setReal1(8.2);
-		r1.setReal2(9.2);
+	
 		
 		double ResultadoEsperado= -1;
-		double ResultadoObtenido = r1.getReal1() - r1.getReal2();
+		double ResultadoObtenido = r1.restaDosReales(8.2, 9.2);
 		assertEquals(ResultadoEsperado, ResultadoObtenido);
 		
 		
-		r1.setReal1(70.2);
-		r1.setReal2(54.7);
+
 		
 		ResultadoEsperado=15.5;
-		ResultadoObtenido=r1.getReal1() - r1.getReal2();
+		ResultadoObtenido=r1.restaDosReales(70.2, 54.7);
 		assertEquals(ResultadoEsperado, ResultadoObtenido);
 		
 	}
 	
 	@Test
 	public void testrestaDosEnteros() {
-		r1.setEntero1(65);
-		r1.setEntero2(74);
+	
 		
 		int ResultadoEsperado=-9;
-		int ResultadoObtenido= r1.getEntero1() - r1.getEntero2();
+		int ResultadoObtenido= r1.restaDosEnteteros(65, 74);
 		assertEquals(ResultadoEsperado, ResultadoObtenido);
 		
-		r1.setEntero1(1456);
-		r1.setEntero2(-77);
-		
+
 		ResultadoEsperado=1533;
-		ResultadoObtenido= r1.getEntero1() - r1.getEntero2();
+		ResultadoObtenido= r1.restaDosEnteteros(1456, -77);
 		assertEquals(ResultadoEsperado, ResultadoObtenido);
 	
 	}
@@ -58,20 +53,16 @@ class TestResta {
 	@Test
 	public void testrestaTresReales() {
 		
-		r1.setReal1(54.1);
-		r1.setReal2(87.1);
-		r1.setReal3(8.3);
+
 		
 		Double ResultadoEsperado=-41.3;
-		Double ResultadoObtenido= r1.getReal1()-r1.getReal2()-r1.getReal3();
+		Double ResultadoObtenido= r1.restaTresReales(54.1, 87.1, 8.3);
 		assertEquals(ResultadoEsperado, ResultadoObtenido);
 		
-		r1.setReal1(55.1);
-		r1.setReal2(-40.1);
-		r1.setReal3(4.8);
+
 		
 		ResultadoEsperado= 90.4;
-		ResultadoObtenido= r1.getReal1()-r1.getReal2()-r1.getReal3();
+		ResultadoObtenido= r1.restaTresReales(55.1, -40.1, 4.8);
 		assertEquals(ResultadoEsperado, ResultadoObtenido);
 		
 		

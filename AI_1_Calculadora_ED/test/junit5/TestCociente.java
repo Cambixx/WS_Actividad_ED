@@ -17,43 +17,37 @@ Cociente c1 ;
 
 	@Test
 	public void testDivisionReales() {
-		c1.setReal1(70.1);
-		c1.setReal2(9.2);
+		
 		
 		double ResultadoEsperado = 7.62;
-		double ResultadoObtenido = Math.round((c1.getReal1()/c1.getReal2())*100.0)/100.0;
+		double ResultadoObtenido = c1.divisionReales(70.1, 9.2);
 		assertEquals(ResultadoEsperado, ResultadoObtenido);
 		
-		c1.setReal1(70.2);
-		c1.setReal2(0);
+		
 		
 		ResultadoEsperado =9.223372036854776E16;
-		ResultadoObtenido = Math.round((c1.getReal1()/c1.getReal2())*100)/100;
+		ResultadoObtenido = c1.divisionReales(70.2, 0);
 		assertEquals(ResultadoEsperado, ResultadoObtenido);
 		
-		c1.setReal1(0);
-		c1.setReal2(-9870.5);
 		
 		ResultadoEsperado =0.0;
-		ResultadoObtenido = Math.round((c1.getReal1()/c1.getReal2())*100)/100;
+		ResultadoObtenido = c1.divisionReales(0, -9870.5);
 		assertEquals(ResultadoEsperado, ResultadoObtenido);
 		
 	}
 	
 	@Test
 	public void testDivisionEnteros() {
-		c1.setEntero1(80);
-		c1.setEntero2(4);
+	
 		
 		int ResultadoEsperado = 20;
-		int ResultadoObtenido = Math.round((c1.getEntero1()/c1.getEntero2())*100)/100;
+		double ResultadoObtenido = c1.divisionEnteros(80, 4);
 		assertEquals(ResultadoEsperado, ResultadoObtenido);
 		
-		c1.setEntero1(0);
-		c1.setEntero2(140);
+	
 		
 		ResultadoEsperado= 0;
-		ResultadoObtenido = Math.round((c1.getEntero1()/c1.getEntero2())*100)/100;
+		ResultadoObtenido = c1.divisionEnteros(0, 140);
 		assertEquals(ResultadoEsperado, ResultadoObtenido);
 		
 	}
@@ -61,55 +55,65 @@ Cociente c1 ;
 	@Test
 	public void testInverso() {
 		
-		c1.setReal1(50.4);
+		
 		
 		double ResultadoEsperado = 0.02;
-		double ResultadoObtenido = Math.round(Math.pow(c1.getReal1(), -1)*100.0)/100.0;
-		double inverso = Math.pow(c1.getReal1(), -1);
+		double ResultadoObtenido = c1.inverso(50.4);
+		double inverso = Math.pow(c1.inverso(50.4), -1);
 		
 		assertEquals(ResultadoEsperado, ResultadoObtenido);
 		
-		if (c1.getReal1()*inverso == 1) {
+		if (c1.inverso(50.4)*inverso == 1) {
 			assertTrue(true);
 		}
 		
 		
-		c1.setReal1(0);
+		
 		
 		ResultadoEsperado = 9.223372036854776E16;
-		ResultadoObtenido = Math.round(Math.pow(c1.getReal1(), -1)*100.0)/100.0;
-		inverso = Math.pow(c1.getReal1(), -1);
+		ResultadoObtenido = c1.inverso(0);
+		inverso = Math.pow(c1.inverso(0), -1);
 		
 		assertEquals(ResultadoEsperado, ResultadoObtenido);
 		
-		if (c1.getReal1()*inverso == 1) {
+		if (c1.inverso(0)*inverso == 1) {
 			assertTrue(true);
 		}
 		
 	}
 	@Test
 	public void testRaiz() {
-		c1.setReal1(70);
+		
 		
 		double ResultadoEsperado = 8.37;
-		double ResultadoObtenido = Math.round(Math.sqrt(c1.getReal1())*100.0)/100.0;
+		double ResultadoObtenido = c1.raiz(70);
 				
 		assertEquals(ResultadoEsperado, ResultadoObtenido);
 		
-		if (ResultadoObtenido*ResultadoObtenido == c1.getReal1()) {
+		if (ResultadoObtenido*ResultadoObtenido == c1.raiz(70)) {
 			assertTrue(true);
 		}
 		
 		
 		
-		c1.setReal1(0.0);
+		
 		
 		ResultadoEsperado = 0.0;
-		ResultadoObtenido = Math.round(Math.sqrt(c1.getReal1())*100.0)/100.0;
+		ResultadoObtenido = Math.round(Math.sqrt(c1.raiz(0.0))*100.0)/100.0;
 				
 		assertEquals(ResultadoEsperado, ResultadoObtenido);
 		
-		if (ResultadoObtenido*ResultadoObtenido == c1.getReal1()) {
+		if (ResultadoObtenido*ResultadoObtenido == c1.raiz(0.0)) {
+			assertTrue(true);
+		}
+		
+		
+		ResultadoEsperado = 0.0;
+		ResultadoObtenido = Math.round(Math.sqrt(c1.raiz(-7))*100.0)/100.0;
+				
+		assertEquals(ResultadoEsperado, ResultadoObtenido);
+		
+		if (ResultadoObtenido*ResultadoObtenido == c1.raiz(-7)) {
 			assertTrue(true);
 		}
 
