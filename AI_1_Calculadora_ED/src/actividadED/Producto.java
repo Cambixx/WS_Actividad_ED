@@ -30,7 +30,7 @@ public class Producto {
 	 * 		  
 	 * @return  Retornará el resultado obtenido de la multiplicación de los parámetros introducidos.
 	 * Ocurrirá un error si se le introduce algún número real. 
-	 * @ deprecated el método {@link #ProductoReales (double, double)} también me calcula dos enteros.
+	 * @deprecated el método {@link #ProductoReales (double, double)} también me calcula dos enteros.
 	 */
 	
 	

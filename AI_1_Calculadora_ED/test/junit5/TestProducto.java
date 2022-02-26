@@ -18,7 +18,6 @@ class TestProducto {
 		
 	}
 	
-	
 	@Test
 	void testProductoReales() {
 		
@@ -44,8 +43,7 @@ class TestProducto {
 		assertEquals(resultadoEsperado, resultadoObtenido);
 		
 	}
-	
-	
+		
 	@Test
 	void testProductoEnteros() {
 		
@@ -71,8 +69,7 @@ class TestProducto {
 		assertEquals(resultadoEsperado, resultadoObtenido);
 		
 	}
-	
-	
+		
 	@Test
 	void testProductoTresReales() {
 		
@@ -98,8 +95,7 @@ class TestProducto {
 		assertEquals(resultadoEsperado, resultadoObtenido);
 		
 	}
-	
-	
+		
 	@Test
 	void testPotencia() {
 		
